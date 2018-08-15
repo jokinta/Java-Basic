@@ -1,0 +1,91 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        double valuta = Double.parseDouble(scanner.nextLine());
+        String ulazna = scanner.nextLine();
+        String izlazna = scanner.nextLine();
+        double rezultat;
+
+       if (ulazna.equalsIgnoreCase("usd")){
+           if (izlazna.equalsIgnoreCase("bgn")) {
+               rezultat = valuta * 1.79549;
+               System.out.printf("%.2f %s",rezultat,izlazna);
+           }
+       }
+
+        if (ulazna.equalsIgnoreCase("bgn")){
+            if (izlazna.equalsIgnoreCase("usd")) {
+                rezultat = valuta / 1.79549;
+                System.out.printf("%.2f %s",rezultat,izlazna);
+            }
+        }
+
+        if (ulazna.equalsIgnoreCase("bgn")){
+            if (izlazna.equalsIgnoreCase("eur")) {
+                rezultat = valuta / 1.95583;
+                System.out.printf("%.2f %s",rezultat,izlazna);
+            }
+        }
+
+        if (ulazna.equalsIgnoreCase("eur")){
+            if (izlazna.equalsIgnoreCase("bgn")) {
+                rezultat = valuta * 1.95583;
+                System.out.printf("%.2f %s",rezultat,izlazna);
+            }
+        }
+        if (ulazna.equalsIgnoreCase("bgn")){
+            if (izlazna.equalsIgnoreCase("gbp")) {
+                rezultat = valuta / 2.53405;
+                System.out.printf("%.2f %s",rezultat,izlazna);
+            }
+        }
+        if (ulazna.equalsIgnoreCase("gbp")){
+            if (izlazna.equalsIgnoreCase("bgn")) {
+                rezultat = valuta * 2.53405;
+                System.out.printf("%.2f %s",rezultat,izlazna);
+            }
+        }
+
+        if (ulazna.equalsIgnoreCase("eur")){
+            if (izlazna.equalsIgnoreCase("gbp")) {
+                rezultat = valuta * 0.771659919;
+                System.out.printf("%.2f %s",rezultat,izlazna);
+
+            }
+        }
+
+        if (ulazna.equalsIgnoreCase("usd")){
+            if (izlazna.equalsIgnoreCase("eur")) {
+                rezultat = valuta * 0.917991354;
+                System.out.printf("%.2f %s",rezultat,izlazna);
+
+            }
+        }
+
+        if (ulazna.equalsIgnoreCase("gbp")){
+            if (izlazna.equalsIgnoreCase("usd")) {
+                rezultat = valuta * 1.411336032;
+                System.out.printf("%.2f %s",rezultat,izlazna);
+
+            }
+        }
+
+
+
+
+
+
+
+
+    }
+
+
+
+
+    }
+
