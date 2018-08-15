@@ -8,12 +8,16 @@ public class RadiansToDegrees {
         Scanner scanner = new Scanner(System.in);
 
 
-        double rad = Double.parseDouble(scanner.nextLine());
+        double radian = Double.parseDouble(scanner.nextLine());
 
 
-        double deg = rad * 57.2958;
+        double degrees = radian * 57.2958;
 
 
-        System.out.print(Math.round(deg));
+        System.out.print(Math.round(degrees)) ;
+
+
+                                    
+
     }
 }
