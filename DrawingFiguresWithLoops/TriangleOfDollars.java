@@ -1,0 +1,28 @@
+package com.company.DrawingFiguresWithLoops;
+
+import java.util.Scanner;
+
+public class TriangleOfDollars {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+        int n = Integer.parseInt(scanner.nextLine());
+        for (int i = 1; i < n; ++i) {
+
+
+            for (int j = 0; j < i; j++) {
+
+
+                System.out.print("$ ");
+
+            }
+            System.out.println();
+
+        }
+        for (int p = 0; p < n; p++) {
+            System.out.print("$ ");
+
+        }
+
+    }
+}
